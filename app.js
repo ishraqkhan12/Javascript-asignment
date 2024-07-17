@@ -48,7 +48,7 @@ askForName();
 //---------------------Exercisee : 4.5 -----------------------
 
 let prize = +prompt("select a number between 0 and 10 to set your prize");
-let select = "My selection: ";
+let select = "You won";
 let prizeMessage;
 
 switch(prize){
@@ -80,7 +80,7 @@ switch(prize){
          prizeMessage= "a brand new car";
         break;
     default:
-        prizeMessage = "sorry! your selection is not valid"
+        alert( "sorry! your selection is not valid")
 }
 alert(select +" " + prizeMessage);
 
@@ -96,6 +96,7 @@ switch(name){
     case "ayesha":
     case "harmain":    
     case "zaid":
+    case "kashaf":
         alert(name + " you are my friend")
         break;
     default:
@@ -120,14 +121,14 @@ else{
 }      
 
 
+
 //--------- Rock, Paper, Scissor game
 
 let arr = ["rock","paper","scissor"];
 
-let player = Math.floor( Math.random()* arr1.length )
-let playerResult = arr[player];
+let playerResult = prompt("Enter rock,paper or scissor");
 
-let computer = Math.floor( Math.random()* arr1.length );
+let computer = Math.floor( Math.random()* arr.length );
 let computerResult = arr[computer];
 
 if( playerResult === computerResult){
@@ -140,7 +141,7 @@ else if(playerResult === "rock" && computerResult ==="scissor" ||
         }
  else{
     alert(`you lose ${playerResult} do not beat ${computerResult}`);
- }       
+ }        
 
 
 
